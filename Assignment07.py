@@ -46,7 +46,7 @@ class Pickle:
         numbers = {1, 2, 3, 4, 5}
         strFile = "pickle.txt"
         pickle.dump(numbers, open (strFile, "wb"))
-        print(numbers, " dictionary has been pickled to file pickle.txt")
+        print(numbers,"has been pickled into", strFile)
         print('Returning to menu')
 
     def Load():
@@ -54,7 +54,7 @@ class Pickle:
         try:
             strFile = "pickle.txt"
             numbers = pickle.load(open (strFile, "rb"))
-            print("File has been de-pickled! ")
+            print(strFile, "has been de-pickled!")
             print(numbers)
         except FileNotFoundError:
             print("File does not exist! Please select option 3 first")
