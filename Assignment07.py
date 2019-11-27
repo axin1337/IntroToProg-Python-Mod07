@@ -60,6 +60,7 @@ class Pickle:
             print("File does not exist! Please select option 3 first")
         finally:
             print("Returning to menu")
+            break
 while True:
     print("""
     Exception Handling and Pickle Demo
